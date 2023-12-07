@@ -9,7 +9,7 @@ public static class InputHelper
     public static async Task<List<string>> GetDataLines(int day, string sessionId)
     {
         var text = await GetData(day, sessionId);
-        return text.Split("\n").ToList();
+        return text.Split("\n").Where(x=> !string.IsNullOrEmpty(x)).ToList();
     }
 
     public static async Task<string> GetData(int day, string sessionId)
@@ -21,5 +21,5 @@ public static class InputHelper
         cookieContainer.Add(url, new Cookie("session", sessionId));
         return await client.GetStringAsync(url);
     }
-    
+
 }
