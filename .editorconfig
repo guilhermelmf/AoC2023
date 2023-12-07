@@ -1,0 +1,31 @@
+# editorconfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.cs]
+indent_size = 4
+max_line_length = 160
+
+[*.sh]
+end_of_line = lf
+
+# ReSharper properties
+resharper_csharp_max_line_length = 160
+resharper_align_multiline_calls_chain = true
+resharper_csharp_empty_block_style = multiline
+resharper_csharp_indent_size = 4
+resharper_place_simple_initializer_on_single_line = false
+resharper_wrap_after_invocation_lpar = false
+resharper_csharp_wrap_after_declaration_lpar = true
+resharper_csharp_wrap_after_invocation_lpar = true
+resharper_csharp_wrap_arguments_style = chop_if_long
+resharper_csharp_wrap_parameters_style = chop_if_long
+resharper_wrap_array_initializer_style = chop_if_long
+resharper_wrap_chained_binary_expressions = chop_if_long
+resharper_wrap_chained_binary_patterns = chop_if_long
+resharper_wrap_chained_method_calls = chop_if_long
